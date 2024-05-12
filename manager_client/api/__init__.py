@@ -1,0 +1,28 @@
+# flake8: noqa
+
+# import apis into api package
+from manager_client.api.account_api import AccountApi
+from manager_client.api.accounts_api import AccountsApi
+from manager_client.api.add_ons_api import AddOnsApi
+from manager_client.api.analytics_imports_api import AnalyticsImportsApi
+from manager_client.api.botify_crawl_imports_api import BotifyCrawlImportsApi
+from manager_client.api.custom_domains_api import CustomDomainsApi
+from manager_client.api.data_uri_api import DataURIApi
+from manager_client.api.embedding_api import EmbeddingApi
+from manager_client.api.google_merchants_api import GoogleMerchantsApi
+from manager_client.api.google_search_console_api import GoogleSearchConsoleApi
+from manager_client.api.google_search_console_o_auth2_api import GoogleSearchConsoleOAuth2Api
+from manager_client.api.google_search_console_searches_api import GoogleSearchConsoleSearchesApi
+from manager_client.api.include_excludes_word_press_plugin_api import IncludeExcludesWordPressPluginApi
+from manager_client.api.merchant_syncs_api import MerchantSyncsApi
+from manager_client.api.merchants_api import MerchantsApi
+from manager_client.api.o_auth2_authorized_clients_api import OAuth2AuthorizedClientsApi
+from manager_client.api.platform_consumptions_api import PlatformConsumptionsApi
+from manager_client.api.platform_limits_api import PlatformLimitsApi
+from manager_client.api.plugin_diagnostics_api import PluginDiagnosticsApi
+from manager_client.api.redeem_codes_api import RedeemCodesApi
+from manager_client.api.sitemap_imports_api import SitemapImportsApi
+from manager_client.api.vector_search_nodes_api import VectorSearchNodesApi
+from manager_client.api.vector_search_queries_api import VectorSearchQueriesApi
+from manager_client.api.vector_search_questions_api import VectorSearchQuestionsApi
+
