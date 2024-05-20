@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **filters** | [**List[Filter]**](Filter.md) | A list of prefilters. | [optional] 
 **query_embedding** | **List[float]** | The list of embeddings, not required if &#x60;query_string&#x60; is provided. | [optional] 
 **query_string** | **str** | The query string, not required if the &#x60;query_embeddings&#x60; are provided. Please note that the &#x60;query_string&#x60; is ignored if the &#x60;query_embeddings&#x60; are provided. | [optional] 
+**query_url** | **str** | Perform a Vector Search based on similarities with an entity with the specified URL (schema:url). | [optional] 
 **similarity_top_k** | **int** | The similarity top K. | [optional] [default to 2]
 
 ## Example

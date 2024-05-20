@@ -27,13 +27,14 @@ class VectorSearchQueryResponseItem(BaseModel):
     """
     An array of objects.
     """ # noqa: E501
-    embeddings: Optional[List[Union[StrictFloat, StrictInt]]] = Field(default=None, description="The embeddings for the text.")
+    dataset_uri: Optional[StrictStr] = Field(default=None, alias="datasetUri")
     id: Optional[StrictStr] = None
+    iri: Optional[StrictStr] = None
     metadata: Optional[Dict[str, Dict[str, Any]]] = Field(default=None, description="A nodes extra metadata.")
     node_id: StrictStr = Field(description="A nodes id.")
     score: Union[StrictFloat, StrictInt] = Field(description="The similarity score between the node and the query embeddings.")
     text: StrictStr = Field(description="The text of a node from which the embeddings were generated.")
-    __properties: ClassVar[List[str]] = ["embeddings", "id", "metadata", "node_id", "score", "text"]
+    __properties: ClassVar[List[str]] = ["datasetUri", "id", "iri", "metadata", "node_id", "score", "text"]
 
     model_config = ConfigDict(
         populate_by_name=True,
@@ -86,8 +87,9 @@ class VectorSearchQueryResponseItem(BaseModel):
             return cls.model_validate(obj)
 
         _obj = cls.model_validate({
-            "embeddings": obj.get("embeddings"),
+            "datasetUri": obj.get("datasetUri"),
             "id": obj.get("id"),
+            "iri": obj.get("iri"),
             "metadata": obj.get("metadata"),
             "node_id": obj.get("node_id"),
             "score": obj.get("score"),

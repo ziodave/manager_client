@@ -6,8 +6,9 @@ An array of objects.
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**embeddings** | **List[float]** | The embeddings for the text. | [optional] 
+**dataset_uri** | **str** |  | [optional] 
 **id** | **str** |  | [optional] 
+**iri** | **str** |  | [optional] 
 **metadata** | **Dict[str, object]** | A nodes extra metadata. | [optional] 
 **node_id** | **str** | A nodes id. | 
 **score** | **float** | The similarity score between the node and the query embeddings. | 

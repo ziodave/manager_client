@@ -32,8 +32,9 @@ class VectorSearchQueryRequest(BaseModel):
     filters: Optional[List[Filter]] = Field(default=None, description="A list of prefilters.")
     query_embedding: Optional[List[Union[StrictFloat, StrictInt]]] = Field(default=None, description="The list of embeddings, not required if `query_string` is provided.")
     query_string: Optional[StrictStr] = Field(default=None, description="The query string, not required if the `query_embeddings` are provided. Please note that the `query_string` is ignored if the `query_embeddings` are provided.")
+    query_url: Optional[StrictStr] = Field(default=None, description="Perform a Vector Search based on similarities with an entity with the specified URL (schema:url).")
     similarity_top_k: Optional[Annotated[int, Field(strict=True, ge=1)]] = Field(default=2, description="The similarity top K.")
-    __properties: ClassVar[List[str]] = ["filters", "query_embedding", "query_string", "similarity_top_k"]
+    __properties: ClassVar[List[str]] = ["filters", "query_embedding", "query_string", "query_url", "similarity_top_k"]
 
     model_config = ConfigDict(
         populate_by_name=True,
@@ -96,6 +97,7 @@ class VectorSearchQueryRequest(BaseModel):
             "filters": [Filter.from_dict(_item) for _item in obj["filters"]] if obj.get("filters") is not None else None,
             "query_embedding": obj.get("query_embedding"),
             "query_string": obj.get("query_string"),
+            "query_url": obj.get("query_url"),
             "similarity_top_k": obj.get("similarity_top_k") if obj.get("similarity_top_k") is not None else 2
         })
         return _obj
