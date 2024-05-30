@@ -31,6 +31,7 @@ from manager_client.models.embedding_request import EmbeddingRequest
 from manager_client.models.exchange_auth_code_request import ExchangeAuthCodeRequest
 from manager_client.models.exchange_auth_code_response import ExchangeAuthCodeResponse
 from manager_client.models.filter import Filter
+from manager_client.models.filter_value import FilterValue
 from manager_client.models.include_exclude import IncludeExclude
 from manager_client.models.include_exclude_request import IncludeExcludeRequest
 from manager_client.models.merchant import Merchant

@@ -159,6 +159,7 @@ Class | Method | HTTP request | Description
  - [ExchangeAuthCodeRequest](docs/ExchangeAuthCodeRequest.md)
  - [ExchangeAuthCodeResponse](docs/ExchangeAuthCodeResponse.md)
  - [Filter](docs/Filter.md)
+ - [FilterValue](docs/FilterValue.md)
  - [IncludeExclude](docs/IncludeExclude.md)
  - [IncludeExcludeRequest](docs/IncludeExcludeRequest.md)
  - [Merchant](docs/Merchant.md)

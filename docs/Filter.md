@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **key** | **str** | The filter key. | 
 **operator** | **str** | A query request filter operator. | 
-**value** | **object** | The filter value. | 
+**value** | [**FilterValue**](FilterValue.md) |  | 
 
 ## Example
 

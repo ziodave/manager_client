@@ -27,6 +27,7 @@ docs/EmbeddingRequest.md
 docs/ExchangeAuthCodeRequest.md
 docs/ExchangeAuthCodeResponse.md
 docs/Filter.md
+docs/FilterValue.md
 docs/GoogleMerchantsApi.md
 docs/GoogleSearchConsoleApi.md
 docs/GoogleSearchConsoleOAuth2Api.md
@@ -129,6 +130,7 @@ manager_client/models/embedding_request.py
 manager_client/models/exchange_auth_code_request.py
 manager_client/models/exchange_auth_code_response.py
 manager_client/models/filter.py
+manager_client/models/filter_value.py
 manager_client/models/include_exclude.py
 manager_client/models/include_exclude_request.py
 manager_client/models/merchant.py
@@ -175,4 +177,5 @@ setup.cfg
 setup.py
 test-requirements.txt
 test/__init__.py
+test/test_filter_value.py
 tox.ini
