@@ -29,7 +29,7 @@ class Filter(BaseModel):
     """ # noqa: E501
     key: StrictStr = Field(description="The filter key.")
     operator: StrictStr = Field(description="A query request filter operator.")
-    value: StrictStr = Field(description="The filter value.")
+    value: Dict[str, Any] = Field(description="The filter value.")
     __properties: ClassVar[List[str]] = ["key", "operator", "value"]
 
     @field_validator('operator')
